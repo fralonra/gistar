@@ -115,7 +115,8 @@ func fetchData() {
 }
 
 func printRep(rep github.Repository) {
-	fmt.Println(markDownUrl(*rep.FullName, *rep.HTMLURL))
+	fmt.Println(markdownTag(markDownUrl(*rep.FullName, *rep.HTMLURL), "####"))
+	fmt.Println()
 
 	if !star {
 		fmt.Printf(markDownImg(shieldsBadget(shieldsTypeStar, rep), shieldsTypeStar.name) + "\t")

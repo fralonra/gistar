@@ -23,7 +23,7 @@ This will generate an `output.md` with all your starred repositories inside.
 | -s | Hide stars. | bool | false |
 | -w | Hide watches. | bool | false |
 | -sort | How to sort the repository list. Available values: 'created', 'updated', 'pushed', 'full_name' and 'lang'. The first four values are options for [go-github](https://godoc.org/github.com/google/go-github/github#RepositoryListOptions). By default, the value is `lang`, and it will sort repositories by their top language. | string | 'lang' |
-| -stl | Badget styles. Available values: 'flat', 'flat-square', 'for-the-badget', 'plastic' and 'social' | string | 'flat' |
+| -stl | Badget styles. Available values: 'flat', 'flat-square', 'for-the-badget', 'plastic' and 'social'. See [here](https://shields.io/) for more infomation. | string | 'flat' |
 
 ```bash
 gistar -f -l -s -w username > output.md
