@@ -129,6 +129,7 @@ func printRep(rep github.Repository) {
 	if !language {
 		fmt.Printf(markDownImg(sheildsBadgetLanguage(rep), "lang"))
 	}
+	fmt.Println()
 
 	fmt.Println()
 	if !description {
